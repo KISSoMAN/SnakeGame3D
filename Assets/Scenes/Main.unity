@@ -3356,7 +3356,7 @@ MonoBehaviour:
   - {fileID: 795542818}
   BonesDistance: 0.98
   BonePrefab: {fileID: 8731363122900894611, guid: dc9f6fd2a59c8db44a175fc369b82068, type: 3}
-  Speed: 0.09
+  Speed: 0.07
   OnEat:
     m_PersistentCalls:
       m_Calls:
