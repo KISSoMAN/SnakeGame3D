@@ -1,7 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class SnakeController : MonoBehaviour
 {
@@ -62,6 +62,15 @@ public class SnakeController : MonoBehaviour
             {
                 OnEat.Invoke();
             }
+        }
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+
+        if (collision.gameObject.tag == "Finish")
+        {
+            SceneManager.LoadScene("WinScene");
         }
     }
 }
